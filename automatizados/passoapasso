@@ -1,0 +1,16 @@
+Passo a passo para criação de testes de integração automatizados
+
+1. Estruturar o pageObject da sua classe de testes (de Login):
+	1.1 Criar um arquivo chamado de LoginPO.java dentro da pasta pageObject ---------------------- ( criar a classe LoginPO )
+	1.2 Fazer herança da classe basePO.java ------------------------------------------------------ ( linha 7 )
+	1.3 Fazer o mapeamento de todos os elementos da tela de login -------------------------------- ( procurar na tela, famoso F12 )
+		1.3.1 Criar os elementos com pageFactory (@FindBy) --------------------------------------- (os FindBy que estão em LoginPO )
+		
+2. Estruturar o arquivo de teste de login (ou outra classe da página 
+	2.1 Criar um arquivo chamado LoginTest.java -------------------------------------------------- ( criar a classe LoginTest )
+	2.2 Fazer herança da classe BaseTest.java ---------------------------------------------------- ( linha 11)
+	2.3 Criar um método inicial que saiba instanciar uma PO de login ----------------------------- ( linha 15 e LEMBRAR DE MUDAR A URLBASE EM  BaseTest)
+	2.4 Criar os testes baseados na planilha de gerenciamento de casos de teste ------------------ (linha 20)
+	
+	----------------------- Esses exercicios acima sao apenas sobre o LoginPO.java e sobre LoginTest.java, a prova estará bastante similar, segundo ele.
+							Se necessário pode ver os GoogleRefatorado. O 4 é o mais atualizado. -------------------------------------- 
